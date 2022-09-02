@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"; // importo los useEffect y useState
 import NavBar from "./Components/Navbar/NavBar";
 import Characters from "./Components/Characters/Characters";
 import Pagination from "./Components/Pagination/Pagination";
+import Footer from "./Components/Footer/Footer"
 
 function App() {
   const [characters, setCharacters] = useState([]); // Declaro useState de Personajes
@@ -47,7 +48,9 @@ function App() {
           onPrevious={onPrevious}
           onNext={onNext}
         />
+
       </div>
+      <Footer footer='Hecho por Luciano Coscia Developer'/>
     </>
   );
 }
